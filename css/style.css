@@ -1,0 +1,250 @@
+*,
+*::before,
+*::after  {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*
+ *
+ * COLORS
+ *
+ */
+
+/*
+	Darkgray: #2e2e2e (46, 46, 46)
+	Gray: #393939 (57, 57, 57)
+	Lightgray: #7d7d7d (125, 125, 125)
+*/
+
+/*
+ *
+ * FONTS
+ *
+ */
+
+@font-face {
+	font-family: 'Product Sans Bold';
+	src: url(../fonts/ProductSansBold.ttf);
+}
+
+@font-face {
+	font-family: 'Product Sans Regular';
+	src: url(../fonts/ProductSansRegular.otf);
+}
+
+@font-face {
+	font-family: 'Product Sans Italic';
+	src: url(../fonts/ProductSansItalic.otf);
+}
+
+/*
+ *
+ * GLOBAL
+ *
+ */
+
+
+
+/*
+ *
+ * NAV
+ *
+ */
+
+
+/*
+ *
+ * FOOTER
+ *
+ */
+
+
+
+/*
+ *
+ * HOME
+ *
+ */
+
+
+
+/*
+ *
+ * ABOUT
+ *
+ */
+
+
+
+/*
+ *
+ * SERVICES
+ *
+ */
+
+
+
+/*
+ *
+ * COMMUNITY
+ *
+ */
+
+
+
+/*
+ *
+ * CONTACT
+ *
+ */
+
+
+
+/*
+ *
+ * Media Query S - Mobile
+ *
+ */
+
+@media only screen and (max-width: 600px) {
+	/* NAV */
+
+
+	/* FOOTER */
+
+
+	/* HOME */
+
+
+	/* ABOUT */
+
+
+	/* SERVICES */
+
+
+	/* COMMUNITY */
+
+
+	/* CONTACT */
+
+}
+
+/*
+ *
+ * Media Query M - Tablet
+ *
+ */
+
+@media only screen and (min-width: 600px) and (max-width: 991px) {
+	/* NAV */
+
+
+	/* FOOTER */
+
+
+	/* HOME */
+
+
+	/* ABOUT */
+
+
+	/* SERVICES */
+
+
+	/* COMMUNITY */
+
+
+	/* CONTACT */
+}
+
+/*
+ *
+ * Media Query L - Desktop
+ *
+ */
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	/* NAV */
+
+
+	/* FOOTER */
+
+
+	/* HOME */
+
+
+	/* ABOUT */
+
+
+	/* SERVICES */
+
+
+	/* COMMUNITY */
+
+
+	/* CONTACT */
+}
+
+/*
+ *
+ * Media Query XL - Large Desktop
+ *
+ */
+
+@media only screen and (min-width: 1200px) and (max-width: 1799px) {
+	/* NAV */
+
+
+	/* FOOTER */
+
+
+	/* HOME */
+
+
+	/* ABOUT */
+
+
+	/* SERVICES */
+
+
+	/* COMMUNITY */
+
+
+	/* CONTACT */
+}
+
+/*
+ *
+ * Media Query XXL - Extra Large Desktop
+ *
+ */
+
+@media only screen and (min-width: 1800px){
+	/* NAV */
+
+
+	/* FOOTER */
+
+
+	/* HOME */
+
+
+	/* ABOUT */
+
+
+	/* SERVICES */
+
+
+	/* COMMUNITY */
+
+
+	/* CONTACT */
+}
+
+.clear:after {
+	content: "";
+	display: block;
+	clear: both;
+}
