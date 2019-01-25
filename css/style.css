@@ -45,7 +45,9 @@
  *
  */
 
-
+body {
+	font-family: 'Product Sans Regular', sans-serif;
+}
 
 /*
  *
@@ -53,6 +55,68 @@
  *
  */
 
+nav {
+	background-color: transparent;
+	box-shadow: none;
+	position: fixed;
+	z-index: 6;
+}
+
+.nav-wrapper {
+	width: 85%;
+	margin: 0 auto;
+	padding: 35px 0;
+}
+
+nav ul a {
+	font-family: "Product Sans Bold", sans-serif;
+	font-size: .9em;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding: 18px 3px 10px 3px;
+	margin: 0 0 0 60px;
+	line-height: 1em;
+}
+
+nav ul a:hover {
+	border-bottom: 2px solid #2e2e2e;
+	background-color: transparent;
+}
+
+nav .brand-logo img {
+	color: pink;
+	height: 40px;
+}
+
+/*Light Nav*/
+
+.light-nav ul a,
+.light-nav a {
+	color: #393939;
+}
+
+/*Dark Nav*/
+
+.dark-nav ul a {
+	color: #fff;
+}
+
+/*Side Nav*/
+
+.sidenav a {
+	font-family: "Product Sans Bold", sans-serif;
+	font-size: .9em;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding: 0;
+	margin-left: 20px;
+	line-height: 1em;
+}
+
+.sidenav img {
+	height: 50px;
+	margin: 50px 0 20px 32px;
+}
 
 /*
  *
@@ -60,7 +124,52 @@
  *
  */
 
+footer {
+	color: lightgray;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	padding: 20px 0;
+	font-size: 1em;
+}
 
+.footer-wrapper {
+	width: 80%;
+	margin: 0 auto;
+	position: relative;
+}
+
+footer .brand img {
+	height: 50px;
+	margin-top: 23px;
+	margin-left: -23px;
+	position: absolute;
+	/*float: left;*/
+}
+
+footer h3 {
+	text-transform: uppercase;
+	font-size: .9em;
+	margin-bottom: 7px;
+}
+
+footer p,
+footer span {
+	line-height: 1.3em;
+}
+
+footer span {
+	position: absolute;
+	bottom: 0;
+}
+
+footer i {
+	font-size: 2.1em;
+	margin-right: 10px;
+	vertical-align: top;
+	padding: 0;
+	line-height: 1em;
+}
 
 /*
  *
@@ -68,6 +177,153 @@
  *
  */
 
+.home-wrapper {
+	position: fixed;
+	top: 0;
+	z-index: 0;
+}
+
+/*First Screen*/
+
+.home-1 {
+	position: relative;
+	height: 100vh;
+}
+
+.home-intro-1,
+.home-video	{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.home-intro-1 {
+	margin-left: -240px;
+	z-index: 3;
+}
+
+.home-intro-1 div {
+	font-family: 'Product Sans Bold', sans-serif;
+	text-transform: uppercase;
+	color: #2e2e2e;
+	font-size: 2em;
+}
+
+.home-intro-1 img {
+	height: 80px;
+}
+
+.home-video {
+	/*height: 60vh;*/
+	/*width: 60vh;*/
+	height: 580px;
+	width: 580px;
+	background-color: lightgray;
+	border-radius: 50%;
+	z-index: 2;
+}
+
+/*Second Screen*/
+
+.home-2 {
+	height: 100vh;
+	background: #f8f8f8;
+	position: relative;
+}
+
+.home-intro-2,
+.home-blocks-2 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.home-intro-2 {
+	width: 30%;	
+	margin-left: 410px;
+	margin-top: 80px;
+	z-index: 3;
+}
+
+.home-intro-2 h2 {
+	font-family: 'Product Sans Bold', sans-serif;
+	color: #2e2e2e;
+	font-size: 3em;
+	line-height: 1em;
+	margin-bottom: 10px;
+}
+
+.home-intro-2 p {
+	font-family: 'Product Sans Bold', sans-serif;
+	color: #393939;
+	font-size: 1.5em;
+	line-height: 1.3em;
+}
+
+.home-blocks-2 {
+	width: 50%;
+	z-index: 2;
+	text-align: center;
+}
+
+.home-blocks-2 .block {
+	background-color: lightgray;
+	height: 200px;
+	width: 200px;
+	border-radius: 100%;
+	display: inline-block;
+}
+
+/*Third Screen*/
+
+.home-3 {
+	background: #2e2e2e;
+	height: 100vh;
+	position: relative;
+}
+
+.home-blocks-3,
+.home-intro-3 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.home-blocks-3 {
+	width: 50%;
+	text-align: center;
+	z-index: 2;
+}
+
+.home-blocks-3 .block {
+	background-color: lightgray;
+	height: 260px;
+	width: 260px;
+	border-radius: 100%;
+	display: inline-block;
+}
+
+.home-intro-3 {
+	z-index: 3;
+	margin-top: 130px;
+	margin-left: 120px;
+	color: #2e2e2e;
+}
+
+.home-intro-3 span {
+	font-size: 2em;
+	display: block;
+	margin: 0;
+	padding: 0;
+	line-height: 1em;
+}
+
+.home-intro-3 span:last-child {
+	font-family: 'Product Sans Bold', sans-serif;
+}
 
 
 /*
@@ -111,6 +367,11 @@
 @media only screen and (max-width: 600px) {
 	/* NAV */
 
+	nav .brand-logo img {
+		margin-top: 10px;
+		height: 30px;
+	}
+
 
 	/* FOOTER */
 
@@ -139,6 +400,11 @@
 
 @media only screen and (min-width: 600px) and (max-width: 991px) {
 	/* NAV */
+
+	nav .brand-logo img {
+		margin-top: 10px;
+		height: 30px;
+	}
 
 
 	/* FOOTER */

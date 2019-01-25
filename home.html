@@ -13,6 +13,9 @@
 	<!-- Material Icons -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+	<!-- Fontawesome Icons -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
 	<!-- Materialize CSS -->
 	<link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
 	
@@ -22,25 +25,163 @@
 </head>
 <body>
 
-	<!-- Nav -->
-	<nav class="nav">
+	<!-- Light Nav -->
+	<nav class="nav light-nav">
+		<div class="nav-wrapper">
 
+			<!-- Logo -->
+			<a href="home.html" class="left brand-logo">
+				<img src="img/assets/rockberry_logo.png">
+			</a>
+			
+			<!-- Hamburger Icon -->
+			<a data-target="mobile-nav" class="sidenav-trigger right">
+				<i class="material-icons">menu</i>
+			</a>
+
+			<!-- Menu -->
+			<ul id="nav-mobile" class="right hide-on-med-and-down">
+				<li>
+					<a href="about.html">
+						About
+					</a>
+				</li>
+				<li>
+					<a href="services.html">
+						Services
+					</a>
+				</li>
+				<li>
+					<a href="community.html">
+						Community
+					</a>
+				</li>
+				<li>
+					<a href="contact.html">
+						Contact
+					</a>
+				</li>
+			</ul>
+
+		</div> <!-- /.nav-wrapper -->
 	</nav> <!-- /.nav -->
 
+	<!-- Sidenav -->
+	<ul class="sidenav" id="mobile-nav">
+		<a href="home.html" class="brand-logo">
+			<img src="img/assets/r_logo.png">
+		</a>
+		<li>
+			<a href="home.html">
+				Home
+			</a>
+		</li>
+		<li>
+			<a href="about.html">
+				About
+			</a>
+		</li>
+		<li>
+			<a href="services.html">
+				Services
+			</a>
+		</li>
+		<li>
+			<a href="community.html">
+				Community
+			</a>
+		</li>
+		<li>
+			<a href="contact.html">
+				Contact
+			</a>
+		</li>
+	</ul> <!-- /.sidenav -->
 
 	<!-- Main -->
 	<main clas="home-wrapper">
 
-	</main> <!-- /.main -->
+		<!-- First Screen -->
+		<div class="home-1">
+			<div class="home-intro-1">
+				<div>
+					We are
+				</div>
+				<img src="img/assets/rockberry_logo.png">
+			</div>
 
+			<div class="home-video"></div>
+		</div> <!-- /.home-1 -->
+
+		<!-- Second Screen -->
+		<div class="home-2">
+			<div class="home-intro-2">
+				<h2>Different grades, different needs.</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt.</p>
+			</div>
+			<div class="home-blocks-2">
+				<div class="block block-1"></div>
+				<div class="block block-2"></div>
+				<div class="block block-3"></div>
+				<div class="block block-4"></div>
+				<div class="block block-5"></div>
+				<div class="block block-6"></div>
+				<div class="block block-7"></div>
+				<div class="block block-8"></div>
+				<div class="block block-9"></div>
+			</div>
+		</div> <!-- /.home-2 -->
+
+		<!-- Third Screen -->
+		<div class="home-3">
+			<div class="home-intro-3">
+				<span>Interested?</span>
+				<span>Get a quote!</span>
+			</div>
+			<div class="home-blocks-3">
+				<div class="block block-1"></div>
+				<div class="block block-2"></div>
+				<div class="block block-3"></div>
+				<div class="block block-4"></div>
+			</div>
+		</div> <!-- /.home-2 -->
+
+	</main> <!-- /.main -->
 
 	<!-- Footer -->
 	<footer>
+
+		<div class="footer-wrapper">
+			<div class="row">
+				<div class="col l4 brand">
+					<img src="img/assets/r_reverse_logo.png">
+					<span>Copyright Rockberry, Inc. 2018<br />
+					All Rights Reserved.</span>
+				</div>
+				<div class="col l3 contact">
+					<h3>Contact Us</h3>
+					<p>info@rockberry.ph</p>
+					<p>(+63) 2 000 0000</p>
+				</div>
+				<div class="col l3 visit">
+					<h3>Visit Us</h3>
+					<p>Add Street, Barangay 1,</p>
+					<p>Javier, Leyte, Philippines</p>
+				</div>
+				<div class="col l2 follow">
+					<h3>Follow Us</h3>
+					<i class="fab fa-facebook-square"></i>
+					<i class="fab fa-youtube"></i>
+				</div>
+
+			</div>
+		</div>
 		
 	</footer> <!-- ./footer -->
 
 	<!-- import jquery -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
 
 	<!-- Materialize JS -->
 	<script type="text/javascript" src="js/materialize.js"></script>
@@ -48,7 +189,10 @@
 	<!-- Custom JS -->
 	<script type="text/javascript">
 
-		//
+		document.addEventListener('DOMContentLoaded', function() {
+			var elems = document.querySelectorAll('.sidenav');
+			var instances = M.Sidenav.init(elems, {});
+		});
 
 	</script>
 
